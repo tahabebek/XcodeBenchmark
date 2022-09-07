@@ -11,13 +11,13 @@ struct ContentView1: View {
     @ObservedObject var vm: ViewModel1
     
     var body: some View {
-        Text("Hello, world!")
+        Text(vm.title)
             .padding()
     }
 }
 
 struct ContentView1_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(vm: ViewModel1())
+        ContentView1(vm: ViewModel1())
     }
 }

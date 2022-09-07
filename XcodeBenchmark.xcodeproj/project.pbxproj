@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7DEDD35428C9026C00D484CD /* XcodeBenchmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEDD35328C9026C00D484CD /* XcodeBenchmarkApp.swift */; };
-		7DEDD35628C9026C00D484CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEDD35528C9026C00D484CD /* ContentView.swift */; };
+		7DEDD35628C9026C00D484CD /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEDD35528C9026C00D484CD /* ContentView1.swift */; };
 		7DEDD35828C9026C00D484CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEDD35728C9026C00D484CD /* Assets.xcassets */; };
 		7DEDD35B28C9026C00D484CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEDD35A28C9026C00D484CD /* Preview Assets.xcassets */; };
 		7DEDD36528C9026D00D484CD /* XcodeBenchmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEDD36428C9026D00D484CD /* XcodeBenchmarkTests.swift */; };
 		7DEDD36F28C9026D00D484CD /* XcodeBenchmarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEDD36E28C9026D00D484CD /* XcodeBenchmarkUITests.swift */; };
 		7DEDD37128C9026D00D484CD /* XcodeBenchmarkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEDD37028C9026D00D484CD /* XcodeBenchmarkUITestsLaunchTests.swift */; };
+		7DEDD37E28C9132500D484CD /* ViewModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEDD37D28C9132500D484CD /* ViewModel1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		7DEDD35028C9026C00D484CD /* XcodeBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEDD35328C9026C00D484CD /* XcodeBenchmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeBenchmarkApp.swift; sourceTree = "<group>"; };
-		7DEDD35528C9026C00D484CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7DEDD35528C9026C00D484CD /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
 		7DEDD35728C9026C00D484CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DEDD35A28C9026C00D484CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7DEDD36028C9026D00D484CD /* XcodeBenchmarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeBenchmarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		7DEDD36A28C9026D00D484CD /* XcodeBenchmarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeBenchmarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEDD36E28C9026D00D484CD /* XcodeBenchmarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeBenchmarkUITests.swift; sourceTree = "<group>"; };
 		7DEDD37028C9026D00D484CD /* XcodeBenchmarkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeBenchmarkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DEDD37D28C9132500D484CD /* ViewModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7DEDD35328C9026C00D484CD /* XcodeBenchmarkApp.swift */,
-				7DEDD35528C9026C00D484CD /* ContentView.swift */,
+				7DEDD38028C9162B00D484CD /* Screen1 */,
 				7DEDD35728C9026C00D484CD /* Assets.xcassets */,
 				7DEDD35928C9026C00D484CD /* Preview Content */,
 			);
@@ -125,6 +127,15 @@
 				7DEDD37028C9026D00D484CD /* XcodeBenchmarkUITestsLaunchTests.swift */,
 			);
 			path = XcodeBenchmarkUITests;
+			sourceTree = "<group>";
+		};
+		7DEDD38028C9162B00D484CD /* Screen1 */ = {
+			isa = PBXGroup;
+			children = (
+				7DEDD35528C9026C00D484CD /* ContentView1.swift */,
+				7DEDD37D28C9132500D484CD /* ViewModel1.swift */,
+			);
+			path = Screen1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DEDD35628C9026C00D484CD /* ContentView.swift in Sources */,
+				7DEDD35628C9026C00D484CD /* ContentView1.swift in Sources */,
+				7DEDD37E28C9132500D484CD /* ViewModel1.swift in Sources */,
 				7DEDD35428C9026C00D484CD /* XcodeBenchmarkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
