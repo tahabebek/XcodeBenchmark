@@ -3,7 +3,7 @@ name: CI
 on:
     pull_request:
         branches:
-            - main
+            - bazel
 
 jobs:
     build-and-test:
