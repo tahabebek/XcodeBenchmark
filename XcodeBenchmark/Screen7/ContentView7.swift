@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct ContentView1: View {
-    @ObservedObject var vm: ViewModel1
+struct ContentView7: View {
+    @ObservedObject var vm: ViewModel7
     
     var body: some View {
-        Text("Hello, world!")
+        Text(vm.title)
             .padding()
     }
 }
 
-struct ContentView1_Previews: PreviewProvider {
+struct ContentView7_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(vm: ViewModel1())
+        ContentView7(vm: ViewModel7())
     }
 }
