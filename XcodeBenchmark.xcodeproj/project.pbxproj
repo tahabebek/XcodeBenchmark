@@ -100,6 +100,7 @@
 		7DEDD3BE28C91A8100D484CD /* ContentView9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView9.swift; sourceTree = "<group>"; };
 		7DEDD3DC28C91AB400D484CD /* ContentView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		7DEDD3DD28C91AB400D484CD /* ViewModel2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel2.swift; sourceTree = "<group>"; };
+		7DEDD3E228C91FBD00D484CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +151,7 @@
 		7DEDD35228C9026C00D484CD /* XcodeBenchmark */ = {
 			isa = PBXGroup;
 			children = (
+				7DEDD3E228C91FBD00D484CD /* Info.plist */,
 				7DEDD35328C9026C00D484CD /* XcodeBenchmarkApp.swift */,
 				7DEDD38028C9162B00D484CD /* Screen1 */,
 				7DEDD3DB28C91AB400D484CD /* Screen2 */,
@@ -611,6 +613,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"XcodeBenchmark/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XcodeBenchmark/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -639,6 +642,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"XcodeBenchmark/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XcodeBenchmark/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
