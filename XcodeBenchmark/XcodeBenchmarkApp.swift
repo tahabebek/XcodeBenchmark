@@ -6,6 +6,16 @@
 //
 
 import SwiftUI
+import Screen1
+import Screen2
+import Screen3
+import Screen4
+import Screen5
+import Screen6
+import Screen7
+import Screen8
+import Screen9
+import Screen10
 
 @main
 struct XcodeBenchmarkApp: App {

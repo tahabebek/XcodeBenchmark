@@ -7,10 +7,14 @@
 
 import SwiftUI
 
-struct ContentView7: View {
+public struct ContentView7: View {
     @ObservedObject var vm: ViewModel7
     
-    var body: some View {
+    public init (vm: ViewModel7) {
+        self.vm = vm
+    }
+    
+    public var body: some View {
         Text(vm.title)
             .padding()
     }

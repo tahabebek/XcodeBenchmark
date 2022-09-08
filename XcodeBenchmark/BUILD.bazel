@@ -1,0 +1,33 @@
+load("@build_bazel_rules_apple//apple:ios.bzl", "ios_application")
+load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
+
+swift_library(
+    name = "AppLibrary",
+    module_name = "AppLibrary",
+    srcs = glob(["*.swift"]),
+    data = glob([
+        "*.xcassets/**/*",
+        "*.lproj/**/*",
+    ]),
+    deps = [
+        "//XcodeBenchmark/Screen1:Screen1",
+        "//XcodeBenchmark/Screen2:Screen2",
+        "//XcodeBenchmark/Screen3:Screen3",
+        "//XcodeBenchmark/Screen4:Screen4",
+        "//XcodeBenchmark/Screen5:Screen5",
+        "//XcodeBenchmark/Screen6:Screen6",
+        "//XcodeBenchmark/Screen7:Screen7",
+        "//XcodeBenchmark/Screen8:Screen8",
+        "//XcodeBenchmark/Screen9:Screen9",
+        "//XcodeBenchmark/Screen10:Screen10"
+        ],
+)
+
+ios_application(
+    name = "App",
+    bundle_id = "com.tahabebek.XcodeBenchmark",
+    families = ["iphone"],
+    infoplists = ["Info.plist"],
+    minimum_os_version = "14.5",
+    deps = [":AppLibrary"],
+)
