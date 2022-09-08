@@ -12,8 +12,6 @@ jobs:
         - uses: actions/checkout@v1
         - name: List available Xcode versions
           run: ls /Applications | grep Xcode
-        - name: Select Xcode
-          run: sudo xcode-select -switch /Applications/Xcode_13.2.app && /usr/bin/xcodebuild -version
         - name: Build
-          run: xcodebuild build -project XcodeBenchmark.xcodeproj -scheme 'XcodeBenchmark' -sdk iphonesimulator PLATFORM_NAME=iphonesimulator -configuration Debug | xcpretty -c
+          run: bazel build //XcodeBenchmark:App
 
