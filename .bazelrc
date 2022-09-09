@@ -6,7 +6,8 @@ build \
   --ios_simulator_version=15.5 \
   --features=swift.use_global_module_cache \
   --progress_report_interval=1 \
-  --spawn_strategy=local \
+  --subcommands \
+  --sandbox_debug \
   --verbose_failures \
 
 build:debug \
