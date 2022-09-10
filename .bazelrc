@@ -1,4 +1,8 @@
 build \
+  --compilation_mode=fastbuild \
+  --worker_sandboxing=false \
+  --strategy=SwiftCompile=local \
+  --features=swift.cacheable_swiftmodules \
   --apple_platform_type=ios \
   --xcode_version=13.2.1 \
   --ios_minimum_os=14.5 \
@@ -7,4 +11,9 @@ build \
   --progress_report_interval=1 \
   --subcommands \
   --sandbox_debug \
+  --announce_rc \
+  --features=swift.use_global_module_cache \
+  --action_env=PATH=/usr/bin:/bin \
+  --action_env=BAZEL_IGNORE_SYSTEM_HEADERS_VERSIONS=1 \
+  --spawn_strategy=local \
   --verbose_failures \
