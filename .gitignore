@@ -7,3 +7,8 @@
 
 .DS_STORE
 xcuserdata/
+*.xccheckout
+*.xcuserstate
+XcodeGen.xcodeproj
+xcodegen.zip
+.vscode/launch.json
