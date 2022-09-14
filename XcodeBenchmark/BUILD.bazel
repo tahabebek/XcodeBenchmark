@@ -1,5 +1,6 @@
 load("@build_bazel_rules_apple//apple:ios.bzl", "ios_application")
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
+load("@xchammer//:BazelExtensions/xcodeproject.bzl", "xcode_project")
 
 swift_library(
     name = "AppLibrary",
@@ -30,6 +31,11 @@ ios_application(
     infoplists = ["Info.plist"],
     minimum_os_version = "14.5",
     deps = [":AppLibrary"],
+)
+
+xcode_project(
+    name = "XcodeProject",
+    targets = [ "//XcodeBenchmark:App" ],
 )
 
 # To see a graph of dependencies, run 

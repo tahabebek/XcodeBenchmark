@@ -6,6 +6,11 @@ http_archive(
     url = "https://github.com/bazelbuild/rules_apple/releases/download/1.1.1/rules_apple.1.1.1.tar.gz",
 )
 
+http_archive(
+    name = "xchammer",
+    urls = ["https://github.com/pinterest/xchammer/releases/download/v3.4.3-dev/xchammer.zip"],
+)
+
 load(
     "@build_bazel_rules_apple//apple:repositories.bzl",
     "apple_rules_dependencies",

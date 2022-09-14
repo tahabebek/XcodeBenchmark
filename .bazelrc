@@ -4,7 +4,7 @@ build \
   --strategy=SwiftCompile=local \
   --features=swift.cacheable_swiftmodules \
   --apple_platform_type=ios \
-  --xcode_version=13.2.1 \
+  --xcode_version=13.4.1 \
   --ios_minimum_os=14.5 \
   --ios_simulator_device="iPhone 13" \
   --ios_simulator_version=15.5 \
@@ -17,3 +17,9 @@ build \
   --action_env=BAZEL_IGNORE_SYSTEM_HEADERS_VERSIONS=1 \
   --spawn_strategy=local \
   --verbose_failures \
+
+
+#buildbuddy
+build --bes_results_url=https://app.buildbuddy.io/invocation/
+build --bes_backend=grpcs://remote.buildbuddy.io
+build --remote_header=x-buildbuddy-api-key=vcTlIdLzhixF6EV00KFj
