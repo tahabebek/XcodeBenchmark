@@ -11,5 +11,5 @@ jobs:
         steps:
         - uses: actions/checkout@v1
         - name: Build
-          run: xcodebuild build -project XcodeBenchmark.xcodeproj -scheme 'XcodeBenchmark' -sdk iphonesimulator PLATFORM_NAME=iphonesimulator -configuration Debug | xcpretty -c
+          run: xcodebuild build -project XcodeBenchmark.xcodeproj -scheme 'XcodeBenchmark' -sdk iphonesimulator PLATFORM_NAME=iphonesimulator -configuration Debug
 
