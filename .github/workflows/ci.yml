@@ -3,7 +3,7 @@ name: CI
 on:
     pull_request:
         branches:
-            - xcodebuild
+            - xcodebuild-self-hosted
 
 jobs:
     build-and-test:
