@@ -11,7 +11,4 @@ jobs:
         steps:
         - uses: actions/checkout@v1
         - name: Build
-          run: xcodebuild build -project XcodeBenchmark.xcodeproj -scheme 'XcodeBenchmark' -sdk iphonesimulator PLATFORM_NAME=iphonesimulator -configuration Debug
-        - name: Test
-          run: xcodebuild -project XcodeBenchmark.xcodeproj -scheme 'XcodeBenchmark' -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.5' test
-
+          run: xcodebuild -project XcodeBenchmark.xcodeproj -scheme 'XcodeBenchmark' -sdk iphonesimulator PLATFORM_NAME=iphonesimulator -configuration Debug build
